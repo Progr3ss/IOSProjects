@@ -147,7 +147,24 @@ extension MainIdeas {
         time.text = "\(counter)"
         
         if counter == 0 {
-//            prepareForSegue(Div, sender: <#T##AnyObject?#>)
+            
+            performSegueWithIdentifier("DivergentSegue", sender: nil)
+
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "DivergentSegue" {
+            print("Divergent")
+            
+            let divergentView = segue.destinationViewController as! Divergent
+            divergentView.mDataArray = mDataArray
+            
+            
+            
+            
         }
     }
     
@@ -190,19 +207,7 @@ extension MainIdeas: UITextFieldDelegate {
     }
     
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "DivergentSegue" {
-//            let destinationController = segue.destinationViewController as! Divergent
-//            destinationController.mDataArray = mDataArray
-//        }
-//    }
-//    
-//    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
-//        
-//      if identifier == "DivergentSegue"{
-//        
-//        
-//    }
+
 }
 
 extension MainIdeas: UITableViewDelegate {
