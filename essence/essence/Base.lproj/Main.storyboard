@@ -328,13 +328,39 @@
                                 <rect key="frame" x="0.0" y="82" width="600" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="66" id="z3c-Wr-Oak">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="66" id="z3c-Wr-Oak" customClass="DivergentCell" customModule="essence" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z3c-Wr-Oak" id="Bf4-3R-dmU">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoH-09-Guz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBN-pa-aye">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="eoH-09-Guz" secondAttribute="trailing" id="66Y-ry-9bs"/>
+                                                <constraint firstAttribute="trailing" secondItem="zBN-pa-aye" secondAttribute="trailing" id="Fv1-Qu-TX4"/>
+                                                <constraint firstItem="zBN-pa-aye" firstAttribute="top" secondItem="Bf4-3R-dmU" secondAttribute="top" id="N3r-Bf-zLN"/>
+                                                <constraint firstItem="eoH-09-Guz" firstAttribute="top" secondItem="Bf4-3R-dmU" secondAttribute="top" id="YDr-Fe-I4U"/>
+                                                <constraint firstAttribute="bottom" secondItem="eoH-09-Guz" secondAttribute="bottom" id="ZGs-TE-57t"/>
+                                                <constraint firstAttribute="bottom" secondItem="zBN-pa-aye" secondAttribute="bottom" id="Zni-ij-LmT"/>
+                                                <constraint firstItem="eoH-09-Guz" firstAttribute="leading" secondItem="Bf4-3R-dmU" secondAttribute="leading" id="dtO-pu-r3d"/>
+                                                <constraint firstItem="zBN-pa-aye" firstAttribute="leading" secondItem="Bf4-3R-dmU" secondAttribute="leading" id="jmp-DH-XCf"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="colorView" destination="eoH-09-Guz" id="Wnk-FT-EuF"/>
+                                            <outlet property="userInput" destination="zBN-pa-aye" id="sWT-zZ-azi"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -360,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgg-s6-D7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="-189"/>
+            <point key="canvasLocation" x="1952" y="-173"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3UY-IF-uLc">

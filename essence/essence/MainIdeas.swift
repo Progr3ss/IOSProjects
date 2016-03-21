@@ -161,6 +161,7 @@ extension MainIdeas {
             
             let divergentView = segue.destinationViewController as! Divergent
             divergentView.mDataArray = mDataArray
+            divergentView.tempColorArray = tempColorArray
             
             
             
@@ -218,6 +219,8 @@ extension MainIdeas: UITableViewDelegate {
             if segue.identifier == "DivergentSegue" {
                 let destinationController = segue.destinationViewController as! Divergent
                 destinationController.mDataArray = mDataArray
+                destinationController.tempColorArray = tempColorArray
+                
             }
         }
         

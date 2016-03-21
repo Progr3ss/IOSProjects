@@ -14,6 +14,7 @@
 		91877D451C9EBDD500F77A2C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91877D441C9EBDD500F77A2C /* Color.swift */; };
 		91877D4B1C9EBE9600F77A2C /* MaterailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91877D4A1C9EBE9600F77A2C /* MaterailView.swift */; };
 		91877D4D1C9ECA5700F77A2C /* TestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91877D4C1C9ECA5700F77A2C /* TestButton.swift */; };
+		918F18C11C9F8E9F00A56C32 /* DivergentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F18C01C9F8E9F00A56C32 /* DivergentCell.swift */; };
 		919E9C841C9EB956009BBF7D /* Divergent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E9C831C9EB956009BBF7D /* Divergent.swift */; };
 		91A720291C8BE61F00D0C54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A720281C8BE61F00D0C54F /* AppDelegate.swift */; };
 		91A7202E1C8BE61F00D0C54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A7202C1C8BE61F00D0C54F /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		91877D441C9EBDD500F77A2C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		91877D4A1C9EBE9600F77A2C /* MaterailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterailView.swift; sourceTree = "<group>"; };
 		91877D4C1C9ECA5700F77A2C /* TestButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestButton.swift; sourceTree = "<group>"; };
+		918F18C01C9F8E9F00A56C32 /* DivergentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivergentCell.swift; sourceTree = "<group>"; };
 		919E9C831C9EB956009BBF7D /* Divergent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Divergent.swift; path = ../Divergent.swift; sourceTree = "<group>"; };
 		91A720251C8BE61F00D0C54F /* essence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = essence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A720281C8BE61F00D0C54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		91A7201C1C8BE61F00D0C54F = {
 			isa = PBXGroup;
 			children = (
+				918F18C01C9F8E9F00A56C32 /* DivergentCell.swift */,
 				91877D4C1C9ECA5700F77A2C /* TestButton.swift */,
 				91877D4A1C9EBE9600F77A2C /* MaterailView.swift */,
 				91877D441C9EBDD500F77A2C /* Color.swift */,
@@ -286,6 +289,7 @@
 				91A720311C8BE61F00D0C54F /* essence.xcdatamodeld in Sources */,
 				91A720291C8BE61F00D0C54F /* AppDelegate.swift in Sources */,
 				91877D4D1C9ECA5700F77A2C /* TestButton.swift in Sources */,
+				918F18C11C9F8E9F00A56C32 /* DivergentCell.swift in Sources */,
 				91877D451C9EBDD500F77A2C /* Color.swift in Sources */,
 				917D88541C8EC3E500631060 /* Constants.swift in Sources */,
 				919E9C841C9EB956009BBF7D /* Divergent.swift in Sources */,

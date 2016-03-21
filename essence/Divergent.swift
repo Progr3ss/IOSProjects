@@ -15,7 +15,13 @@ class Divergent: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
+
+    @IBOutlet weak var colorView: UIView!
+    
+    
+    
      var mDataArray : NSMutableArray = []
+     var tempColorArray: NSMutableArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,16 +42,23 @@ extension Divergent: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! DivergentCell
         
-        cell.textLabel?.text = mDataArray[indexPath.row] as! String
+//        cell.textLabel?.text = mDataArray[indexPath.row] as! String
+        cell.userInput.text = mDataArray[indexPath.row] as? String
+//        print("tempColor \(tempColorArray)")
+        cell.colorView.backgroundColor = tempColorArray[indexPath.row] as? UIColor
         
         return cell
     }
-    
-    
-    
-    
-    
-    
+
 }
+
+extension Divergent: UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        print("Did Select Row")
+        
+    }
+}
+
