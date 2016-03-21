@@ -13,11 +13,10 @@ class Divergent: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
-    
-    
-
     @IBOutlet weak var colorView: UIView!
     
+    var originalCenter = CGPoint()
+    var deleteOnDragRelease = false
     
     
      var mDataArray : NSMutableArray = []
@@ -44,11 +43,10 @@ extension Divergent: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! DivergentCell
         
-//        cell.textLabel?.text = mDataArray[indexPath.row] as! String
         cell.userInput.text = mDataArray[indexPath.row] as? String
-//        print("tempColor \(tempColorArray)")
+
         cell.colorView.backgroundColor = tempColorArray[indexPath.row] as? UIColor
-        
+
         return cell
     }
 
@@ -60,5 +58,8 @@ extension Divergent: UITableViewDelegate {
         print("Did Select Row")
         
     }
+
 }
+
+
 
