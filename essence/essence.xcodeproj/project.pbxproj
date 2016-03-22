@@ -15,7 +15,6 @@
 		917D88541C8EC3E500631060 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D88531C8EC3E500631060 /* Constants.swift */; };
 		91877D451C9EBDD500F77A2C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91877D441C9EBDD500F77A2C /* Color.swift */; };
 		91877D4B1C9EBE9600F77A2C /* MaterailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91877D4A1C9EBE9600F77A2C /* MaterailView.swift */; };
-		91877D4D1C9ECA5700F77A2C /* TestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91877D4C1C9ECA5700F77A2C /* TestButton.swift */; };
 		918F18C11C9F8E9F00A56C32 /* DivergentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F18C01C9F8E9F00A56C32 /* DivergentCell.swift */; };
 		919E9C841C9EB956009BBF7D /* Divergent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E9C831C9EB956009BBF7D /* Divergent.swift */; };
 		91A720291C8BE61F00D0C54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A720281C8BE61F00D0C54F /* AppDelegate.swift */; };
@@ -47,13 +46,13 @@
 /* Begin PBXFileReference section */
 		911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellDeletion.swift; sourceTree = "<group>"; };
 		911D525A1CA144F90015CA76 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		911D525C1CA15C240015CA76 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		917D884D1C8EBBD300631060 /* MainIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainIdeas.swift; sourceTree = "<group>"; };
 		917D884F1C8EBD0300631060 /* IdeaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaCell.swift; sourceTree = "<group>"; };
 		917D88511C8EC3C300631060 /* MateralTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateralTextField.swift; sourceTree = "<group>"; };
 		917D88531C8EC3E500631060 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		91877D441C9EBDD500F77A2C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		91877D4A1C9EBE9600F77A2C /* MaterailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterailView.swift; sourceTree = "<group>"; };
-		91877D4C1C9ECA5700F77A2C /* TestButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestButton.swift; sourceTree = "<group>"; };
 		918F18C01C9F8E9F00A56C32 /* DivergentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivergentCell.swift; sourceTree = "<group>"; };
 		919E9C831C9EB956009BBF7D /* Divergent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Divergent.swift; path = ../Divergent.swift; sourceTree = "<group>"; };
 		91A720251C8BE61F00D0C54F /* essence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = essence.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,10 +98,10 @@
 		91A7201C1C8BE61F00D0C54F = {
 			isa = PBXGroup;
 			children = (
+				911D525C1CA15C240015CA76 /* MyPlayground.playground */,
 				911D525A1CA144F90015CA76 /* ToDoItem.swift */,
 				911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */,
 				918F18C01C9F8E9F00A56C32 /* DivergentCell.swift */,
-				91877D4C1C9ECA5700F77A2C /* TestButton.swift */,
 				91877D4A1C9EBE9600F77A2C /* MaterailView.swift */,
 				91877D441C9EBDD500F77A2C /* Color.swift */,
 				91A720271C8BE61F00D0C54F /* essence */,
@@ -294,7 +293,6 @@
 				917D884E1C8EBBD300631060 /* MainIdeas.swift in Sources */,
 				91A720311C8BE61F00D0C54F /* essence.xcdatamodeld in Sources */,
 				91A720291C8BE61F00D0C54F /* AppDelegate.swift in Sources */,
-				91877D4D1C9ECA5700F77A2C /* TestButton.swift in Sources */,
 				918F18C11C9F8E9F00A56C32 /* DivergentCell.swift in Sources */,
 				91877D451C9EBDD500F77A2C /* Color.swift in Sources */,
 				917D88541C8EC3E500631060 /* Constants.swift in Sources */,
