@@ -24,6 +24,9 @@ class Divergent: UIViewController {
         super.viewDidLoad()
         print("Divergent Color \(tempColorArray) and Divergent toDoItems \(toDoItems)")
         tableView.registerClass(DivergentCell.self, forCellReuseIdentifier: "cell")
+        tableView.estimatedRowHeight = 66.0
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
 
 //        print("Divergent mData \(mDataArray)")
 
@@ -47,6 +50,8 @@ extension Divergent: UITableViewDataSource {
 
         let item = toDoItems[indexPath.row]
         cell.textLabel?.text = item.text
+        cell.textLabel?.numberOfLines = 0
+
         cell.backgroundColor = tempColorArray[indexPath.row] as? UIColor
 
         cell.delegate = self

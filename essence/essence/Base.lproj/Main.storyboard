@@ -151,7 +151,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9K-mv-Lcc" customClass="MaterailView" customModule="essence" customModuleProvider="target">
                                 <rect key="frame" x="10" y="166" width="580" height="434"/>
                                 <subviews>
-                                    <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j19-wD-hz5">
+                                    <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j19-wD-hz5">
                                         <rect key="frame" x="0.0" y="0.0" width="580" height="434"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
@@ -161,7 +161,24 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jHM-ff-jin" id="ASf-wx-pGJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="580" height="65"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFU-sK-A1J">
+                                                            <rect key="frame" x="0.0" y="0.0" width="580" height="65"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="EFU-sK-A1J" secondAttribute="trailing" id="49L-ID-3ah"/>
+                                                        <constraint firstItem="EFU-sK-A1J" firstAttribute="top" secondItem="ASf-wx-pGJ" secondAttribute="top" id="6fc-w9-FGG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="EFU-sK-A1J" secondAttribute="bottom" id="8Zn-Sh-swa"/>
+                                                        <constraint firstItem="EFU-sK-A1J" firstAttribute="leading" secondItem="ASf-wx-pGJ" secondAttribute="leading" id="h3c-QK-q2q"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="userInputLabel" destination="EFU-sK-A1J" id="Dm0-8w-ujh"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -301,7 +318,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z3c-Wr-Oak" id="Bf4-3R-dmU">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMf-XM-wXQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uMf-XM-wXQ" firstAttribute="leading" secondItem="Bf4-3R-dmU" secondAttribute="leading" id="1nI-kF-Jsw"/>
+                                                <constraint firstItem="uMf-XM-wXQ" firstAttribute="top" secondItem="Bf4-3R-dmU" secondAttribute="top" id="6mW-8t-b8D"/>
+                                                <constraint firstAttribute="bottom" secondItem="uMf-XM-wXQ" secondAttribute="bottom" id="MAy-zJ-k4i"/>
+                                                <constraint firstAttribute="trailing" secondItem="uMf-XM-wXQ" secondAttribute="trailing" id="a05-m1-mRu"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ListLabel" destination="uMf-XM-wXQ" id="Mxs-p2-q3c"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

@@ -44,7 +44,8 @@ extension MainIdeas: UITableViewDataSource
         
         let item = toDoItems[indexPath.row]
         cell.backgroundColor = tempColorArray[indexPath.row] as? UIColor
-        cell.textLabel?.text = item.text
+//        cell.textLabel?.text = item.text
+        cell.userInputLabel?.text = item.text
 
         return cell
     }
