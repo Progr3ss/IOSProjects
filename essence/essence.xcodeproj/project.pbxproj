@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911D52591CA144BE0015CA76 /* TableViewCellDeletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */; };
+		911D525B1CA144F90015CA76 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D525A1CA144F90015CA76 /* ToDoItem.swift */; };
 		917D884E1C8EBBD300631060 /* MainIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D884D1C8EBBD300631060 /* MainIdeas.swift */; };
 		917D88501C8EBD0300631060 /* IdeaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D884F1C8EBD0300631060 /* IdeaCell.swift */; };
 		917D88521C8EC3C400631060 /* MateralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D88511C8EC3C300631060 /* MateralTextField.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellDeletion.swift; sourceTree = "<group>"; };
+		911D525A1CA144F90015CA76 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		917D884D1C8EBBD300631060 /* MainIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainIdeas.swift; sourceTree = "<group>"; };
 		917D884F1C8EBD0300631060 /* IdeaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaCell.swift; sourceTree = "<group>"; };
 		917D88511C8EC3C300631060 /* MateralTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateralTextField.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		91A7201C1C8BE61F00D0C54F = {
 			isa = PBXGroup;
 			children = (
+				911D525A1CA144F90015CA76 /* ToDoItem.swift */,
+				911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */,
 				918F18C01C9F8E9F00A56C32 /* DivergentCell.swift */,
 				91877D4C1C9ECA5700F77A2C /* TestButton.swift */,
 				91877D4A1C9EBE9600F77A2C /* MaterailView.swift */,
@@ -292,6 +298,8 @@
 				918F18C11C9F8E9F00A56C32 /* DivergentCell.swift in Sources */,
 				91877D451C9EBDD500F77A2C /* Color.swift in Sources */,
 				917D88541C8EC3E500631060 /* Constants.swift in Sources */,
+				911D525B1CA144F90015CA76 /* ToDoItem.swift in Sources */,
+				911D52591CA144BE0015CA76 /* TableViewCellDeletion.swift in Sources */,
 				919E9C841C9EB956009BBF7D /* Divergent.swift in Sources */,
 				91877D4B1C9EBE9600F77A2C /* MaterailView.swift in Sources */,
 			);

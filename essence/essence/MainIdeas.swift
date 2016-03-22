@@ -18,18 +18,14 @@ class MainIdeas: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 //    @IBOutlet weak var timer: UILabel!
     @IBOutlet weak var time: UILabel!
-     var mDataArray : NSMutableArray = []
+//     var mDataArray : NSMutableArray = []
+     var toDoItems = [ToDoItem]()
      var mListIdeas : NSMutableArray = []
      var tempColorArray : NSMutableArray = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         userAnswer.delegate = self
-//        tableView.estimatedRowHeight = 55.0
-//        tableView.rowHeight = UITableViewAutomaticDimension
-        print("mData \(mDataArray)")
-
-        // Do any additional setup after loading the view.
     }
 
 
@@ -43,25 +39,18 @@ extension MainIdeas: UITableViewDataSource
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! IdeaCell
         
-        cell.userInputLabel.text = mDataArray[indexPath.row] as? String
-        cell.userInputLabel.textColor = UIColor.whiteColor()
         
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: "handleSwipes:")
-        cell.swipeButton.addGestureRecognizer(leftSwipe)
-        cell.swipeButton.backgroundColor = UIColor.clearColor()
-        cell.swipeButton.tag = indexPath.row
-        cell.contentView.addSubview(cell.swipeButton)
+//        cell.userInput.text = toDoItems[indexPath.row]
         
-        cell.imageColor.layer.cornerRadius = 2
-        if (indexPath.row == mDataArray.count-1){
-            cell.imageColor.backgroundColor = (tempColorArray[indexPath.row] as! UIColor)
-        }
-        
+        let item = toDoItems[indexPath.row]
+        cell.backgroundColor = tempColorArray[indexPath.row] as? UIColor
+        cell.textLabel?.text = item.text
+
         return cell
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //        print("row \(mDataArray.count)")
-        return mDataArray.count
+        return toDoItems.count
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -73,69 +62,12 @@ extension MainIdeas: UITableViewDataSource
     }
 }
 
-//extension MainIdeas: UITableViewDelegate {
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        
-//        
-//    }
-//}
-
-extension MainIdeas: UIGestureRecognizerDelegate {
-    
-    func handleSwipes(sender:UISwipeGestureRecognizer) {
-        
-        if (sender.direction == .Left) {
-            
-            print("Swipe L");
-        }
-        
-        
-        
-        if (sender.direction == .Up) {
-            
-            print("Swipe Up");
-        }
-//        if (sender.direction == .Left) {
-//            
-//            print("Swipe L");
-//        }
-        
-        if (sender.direction == .Down) {
-            
-            print("Swipe Up");
-        }
-        
-        if (sender.direction == .Right) {
-            
-            print("Swipe R");
-            
-//            if let button = sender.view as? UIButton {
-//                
-//                let mindexPath = NSIndexPath(forRow: button.tag, inSection: 0  )
-//                tableView.beginUpdates()
-//                mDataArray.removeObjectAtIndex(button.tag)
-//                tempColorArray.removeObjectAtIndex(button.tag)
-//                tableView.deleteRowsAtIndexPaths([mindexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-//                tableView.endUpdates()
-//                tableView.reloadData()
-//            }
-        }
-    }
-}
 
 
 //Functions
 extension MainIdeas {
     
-//    @IBOutlet weak var timers: UILabel!
-///@IBOutlet/    var counter = 10
-//    var timer = NSTimer()
-    
-//    /@IBOutlet weak var timer: ULable!
-    
-    
-    
+  
 @IBAction func startButton(sender: AnyObject) {
         
         timer.invalidate()
@@ -160,8 +92,11 @@ extension MainIdeas {
             print("Divergent")
             
             let divergentView = segue.destinationViewController as! Divergent
-            divergentView.mDataArray = mDataArray
+//            divergentView.mDataArray = mDataArray
+//            divergentView.tempColorArray = tempColorArray
+            divergentView.self.toDoItems = self.toDoItems
             divergentView.tempColorArray = tempColorArray
+            print("In MainIdea toDoItems \(self.toDoItems) MainIdea color \(tempColorArray)")
             
             
             
@@ -170,7 +105,6 @@ extension MainIdeas {
     }
     
 }
-
 
 
 
@@ -182,9 +116,7 @@ extension MainIdeas: UITextFieldDelegate {
         textField.resignFirstResponder()
         if (!textField.text!.isEmpty) {
             
-            
-            mDataArray.addObject(textField.text!)
-            
+            self.toDoItems.append(ToDoItem(text: textField.text!))
             textField.text = ""
             textField.textColor = UIColor.whiteColor()
             tableView.hidden = false
@@ -192,41 +124,53 @@ extension MainIdeas: UITextFieldDelegate {
             let randomIndex = Int(arc4random_uniform(UInt32(colorsArray.count)))
             tempColorArray.addObject(colorsArray[randomIndex] as UIColor)
             
-            //            print("textField \(mDataArray.count-1)")
-            let mindexPath = NSIndexPath(forRow:mDataArray.count-1, inSection: 0)
+            let mindexPath = NSIndexPath(forRow:self.toDoItems.count-1, inSection: 0)
             //            let mindexPath = NSIndexPath(forRow:0, inSection: 0)
             tableView.insertRowsAtIndexPaths([mindexPath], withRowAnimation: UITableViewRowAnimation.Top)
-            
             tableView.scrollToRowAtIndexPath(mindexPath, atScrollPosition: UITableViewScrollPosition.Top, animated: false)
             
-//            mListIdeas += mindexPath
-            
-            print("mindexPaht \(mDataArray)")
+            //            mListIdeas += mindexPath
             self.tableView.reloadData()
         }
         return true
     }
-    
-    
-
 }
 
-extension MainIdeas: UITableViewDelegate {
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        print("Did Select Row ")
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == "DivergentSegue" {
-                let destinationController = segue.destinationViewController as! Divergent
-                destinationController.mDataArray = mDataArray
-                destinationController.tempColorArray = tempColorArray
-                
-            }
-        }
-        
-        
-    }
-}
+
+
+
+
+//extension MainIdeas: UITableViewDelegate, TableViewCellDelegate {
+//    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        print("Did Select Row ")
+//        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//            if segue.identifier == "DivergentSegue" {
+//                let destinationController = segue.destinationViewController as! Divergent
+//                destinationController.self.toDoItems = self.toDoItems
+//                destinationController.tempColorArray = tempColorArray
+//                
+//            }
+//        }
+//    }
+//    
+//    func toDoItemDeleted(toDoItem: ToDoItem) {
+//        let index = (toDoItems as NSArray).indexOfObject(toDoItem)
+//        if index == NSNotFound { return }
+//        
+//        // could removeAtIndex in the loop but keep it here for when indexOfObject works
+//        toDoItems.removeAtIndex(index)
+//        
+//        // use the UITableView to animate the removal of this row
+//        tableView.beginUpdates()
+//        let indexPathForRow = NSIndexPath(forRow: index, inSection: 0)
+//        tableView.deleteRowsAtIndexPaths([indexPathForRow], withRowAnimation: .Fade)
+//        tableView.endUpdates()
+//    }
+//
+//    
+//}
 
 
 
