@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		911D52591CA144BE0015CA76 /* TableViewCellDeletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */; };
 		911D525B1CA144F90015CA76 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D525A1CA144F90015CA76 /* ToDoItem.swift */; };
+		912CEE491CA570CB00B41481 /* EntryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912CEE481CA570CB00B41481 /* EntryList.swift */; };
+		914A05791CA3DEFD002B99E0 /* NewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A05781CA3DEFD002B99E0 /* NewEntry.swift */; };
+		91523F641CA3F79000A9D90F /* Reflection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91523F621CA3F79000A9D90F /* Reflection+CoreDataProperties.swift */; };
+		91523F651CA3F79000A9D90F /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91523F631CA3F79000A9D90F /* Reflection.swift */; };
 		917D884E1C8EBBD300631060 /* MainIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D884D1C8EBBD300631060 /* MainIdeas.swift */; };
 		917D88501C8EBD0300631060 /* IdeaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D884F1C8EBD0300631060 /* IdeaCell.swift */; };
 		917D88521C8EC3C400631060 /* MateralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D88511C8EC3C300631060 /* MateralTextField.swift */; };
@@ -24,6 +28,7 @@
 		91A720361C8BE61F00D0C54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A720341C8BE61F00D0C54F /* LaunchScreen.storyboard */; };
 		91A720411C8BE61F00D0C54F /* essenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A720401C8BE61F00D0C54F /* essenceTests.swift */; };
 		91A7204C1C8BE61F00D0C54F /* essenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A7204B1C8BE61F00D0C54F /* essenceUITests.swift */; };
+		91AAD4B31CA67955005D8195 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD4B21CA67955005D8195 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,10 @@
 		911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellDeletion.swift; sourceTree = "<group>"; };
 		911D525A1CA144F90015CA76 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		911D525C1CA15C240015CA76 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		912CEE481CA570CB00B41481 /* EntryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryList.swift; sourceTree = "<group>"; };
+		914A05781CA3DEFD002B99E0 /* NewEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEntry.swift; sourceTree = "<group>"; };
+		91523F621CA3F79000A9D90F /* Reflection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflection+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		91523F631CA3F79000A9D90F /* Reflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
 		917D884D1C8EBBD300631060 /* MainIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainIdeas.swift; sourceTree = "<group>"; };
 		917D884F1C8EBD0300631060 /* IdeaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaCell.swift; sourceTree = "<group>"; };
 		917D88511C8EC3C300631060 /* MateralTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateralTextField.swift; sourceTree = "<group>"; };
@@ -68,6 +77,7 @@
 		91A720471C8BE61F00D0C54F /* essenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = essenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A7204B1C8BE61F00D0C54F /* essenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = essenceUITests.swift; sourceTree = "<group>"; };
 		91A7204D1C8BE61F00D0C54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91AAD4B21CA67955005D8195 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,9 @@
 		91A7201C1C8BE61F00D0C54F = {
 			isa = PBXGroup;
 			children = (
+				91AAD4B21CA67955005D8195 /* CoreDataStack.swift */,
+				91523F621CA3F79000A9D90F /* Reflection+CoreDataProperties.swift */,
+				91523F631CA3F79000A9D90F /* Reflection.swift */,
 				911D525C1CA15C240015CA76 /* MyPlayground.playground */,
 				911D525A1CA144F90015CA76 /* ToDoItem.swift */,
 				911D52581CA144BE0015CA76 /* TableViewCellDeletion.swift */,
@@ -129,6 +142,8 @@
 				917D884F1C8EBD0300631060 /* IdeaCell.swift */,
 				917D884D1C8EBBD300631060 /* MainIdeas.swift */,
 				91A7202C1C8BE61F00D0C54F /* Main.storyboard */,
+				912CEE481CA570CB00B41481 /* EntryList.swift */,
+				914A05781CA3DEFD002B99E0 /* NewEntry.swift */,
 				91A720321C8BE61F00D0C54F /* Assets.xcassets */,
 				91A720341C8BE61F00D0C54F /* LaunchScreen.storyboard */,
 				91A720371C8BE61F00D0C54F /* Info.plist */,
@@ -290,12 +305,17 @@
 			files = (
 				917D88501C8EBD0300631060 /* IdeaCell.swift in Sources */,
 				917D88521C8EC3C400631060 /* MateralTextField.swift in Sources */,
+				914A05791CA3DEFD002B99E0 /* NewEntry.swift in Sources */,
 				917D884E1C8EBBD300631060 /* MainIdeas.swift in Sources */,
 				91A720311C8BE61F00D0C54F /* essence.xcdatamodeld in Sources */,
 				91A720291C8BE61F00D0C54F /* AppDelegate.swift in Sources */,
+				91523F641CA3F79000A9D90F /* Reflection+CoreDataProperties.swift in Sources */,
 				918F18C11C9F8E9F00A56C32 /* DivergentCell.swift in Sources */,
+				912CEE491CA570CB00B41481 /* EntryList.swift in Sources */,
+				91523F651CA3F79000A9D90F /* Reflection.swift in Sources */,
 				91877D451C9EBDD500F77A2C /* Color.swift in Sources */,
 				917D88541C8EC3E500631060 /* Constants.swift in Sources */,
+				91AAD4B31CA67955005D8195 /* CoreDataStack.swift in Sources */,
 				911D525B1CA144F90015CA76 /* ToDoItem.swift in Sources */,
 				911D52591CA144BE0015CA76 /* TableViewCellDeletion.swift in Sources */,
 				919E9C841C9EB956009BBF7D /* Divergent.swift in Sources */,

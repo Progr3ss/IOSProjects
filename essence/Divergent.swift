@@ -24,13 +24,9 @@ class Divergent: UIViewController {
         super.viewDidLoad()
         print("Divergent Color \(tempColorArray) and Divergent toDoItems \(toDoItems)")
         tableView.registerClass(DivergentCell.self, forCellReuseIdentifier: "cell")
-        tableView.estimatedRowHeight = 66.0
-        
-        tableView.rowHeight = UITableViewAutomaticDimension
+//        tableView.estimatedRowHeight = 66.0
+//        tableView.rowHeight = UITableViewAutomaticDimension
 
-//        print("Divergent mData \(mDataArray)")
-
-        // Do any additional setup after loading the view.
     }
 
     
@@ -89,13 +85,7 @@ extension Divergent: TableViewCellDelegate {
         tableView.endUpdates()
     }
     
-    
- 
-    
 }
-
-
-
 
 
 
