@@ -13,7 +13,15 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
 
     var reflection = [NSManagedObject]()
     var coreDataStack: CoreDataStack!
+    private var entryCell = NewEntryCell()
     var fetchedResultsController: NSFetchedResultsController!
+
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,11 +80,12 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! NewEntryCell
         
         var entry = self.fetchedResultsController.objectAtIndexPath(indexPath) as? Reflection
         
-        cell.textLabel?.text = entry!.body
+        cell.configureCellForEntry(entry!)
+
         
         
         return cell
@@ -87,6 +96,16 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
         let sectionInfo =  fetchedResultsController.sections![section]
         return sectionInfo.name
     }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        let entry = self.fetchedResultsController().objectAtIndexPath(indexPath) as! Reflection
+        let entry = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Reflection
+
+        let height = entryCell.getHeightForEntry(entry)
+        
+        return height
+    }
+    
     
     override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle.Delete
