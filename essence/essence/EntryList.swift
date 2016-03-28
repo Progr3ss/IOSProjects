@@ -26,6 +26,8 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchResultController()
+//        tableView.estimatedRowHeight = 100.0
+//        tableView.
     fetchedResultsController.delegate = self
         //3
         do {
