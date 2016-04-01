@@ -13,11 +13,14 @@ class MainIdeas: UIViewController {
     var counter = 10
     var timer = NSTimer()
     
+	@IBOutlet weak var userQuestion: UILabel!
     @IBOutlet weak var userAnswer: UITextField!
 //    @IBOutlet weak var inputTF:MateralTextField!
     @IBOutlet weak var tableView: UITableView!
 //    @IBOutlet weak var timer: UILabel!
     @IBOutlet weak var time: UILabel!
+	
+	var test2 = " "
 //     var mDataArray : NSMutableArray = []
      var toDoItems = [ToDoItem]()
      var mListIdeas : NSMutableArray = []
@@ -25,6 +28,8 @@ class MainIdeas: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		userQuestion.text = test2
+//		print("test2 MainIdear\(test2)")
         userAnswer.delegate = self
     }
 
@@ -46,6 +51,7 @@ extension MainIdeas: UITableViewDataSource
         cell.backgroundColor = tempColorArray[indexPath.row] as? UIColor
 //        cell.textLabel?.text = item.text
         cell.userInputLabel?.text = item.text
+//		cell
 
         return cell
     }
@@ -72,11 +78,11 @@ extension MainIdeas {
 @IBAction func startButton(sender: AnyObject) {
         
         timer.invalidate()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "timerAction", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(MainIdeas.timerAction), userInfo: nil, repeats: true)
     }
     
     func timerAction(){
-        --counter
+        counter -= 1
         time.text = "\(counter)"
         
         if counter == 0 {

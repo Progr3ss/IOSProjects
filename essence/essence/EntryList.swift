@@ -15,8 +15,7 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     var coreDataStack: CoreDataStack!
     private var entryCell = NewEntryCell()
     var fetchedResultsController: NSFetchedResultsController!
-
-    
+    let dataStack = CoreDataStack.sharedInstance
     
     
     
@@ -26,8 +25,6 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchResultController()
-//        tableView.estimatedRowHeight = 100.0
-//        tableView.
     fetchedResultsController.delegate = self
         //3
         do {
@@ -40,30 +37,7 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     }
     
     
-//    override func viewWillAppear(animated: Bool) {
-//        super.viewWillAppear(animated)
-//        
-//        //1
-//        let appDelegate =
-//            UIApplication.sharedApplication().delegate as! AppDelegate
-//        
-//        let managedContext = appDelegate.managedObjectContext
-//        
-//        //2
-//        let fetchRequest = NSFetchRequest(entityName: "Reflection")
-//        let sortDescriptor = NSSortDescriptor(key: "date", ascending: false)
-//        fetchRequest.sortDescriptors = [sortDescriptor]
-//
-//        
-//        //3
-//        do {
-//            let results =
-//                try managedContext.executeFetchRequest(fetchRequest)
-//            reflection = results as! [NSManagedObject]
-//        } catch let error as NSError {
-//            print("Could not fetch \(error), \(error.userInfo)")
-//        }
-//    }
+
 
 
     // MARK: - Table view data source
@@ -84,7 +58,7 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! NewEntryCell
         
-        var entry = self.fetchedResultsController.objectAtIndexPath(indexPath) as? Reflection
+        let entry = self.fetchedResultsController.objectAtIndexPath(indexPath) as? Reflection
         
         cell.configureCellForEntry(entry!)
 
@@ -114,19 +88,12 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        var entry = self.fetchedResultsController.objectAtIndexPath(indexPath) as? Reflection
-        let  appDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
-        
-//        managedContext.deletedObject(entry)
-        managedContext.deleteObject(entry!)
-        do{
-            try managedContext.save()
-        }catch let error as NSError {
-            print("Error: \(error.localizedDescription)")
-        }//        fetchedResultsController.d
-//        manged
-//        entry.dele
+		
+        let entry = self.fetchedResultsController.objectAtIndexPath(indexPath) as? Reflection
+		
+		dataStack.managedObjectContext.deleteObject(entry!)
+		dataStack.saveContext()
+
         
     }
     
@@ -140,7 +107,7 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     func entryListFetchequest() -> NSFetchRequest {
         let fetchRequest = NSFetchRequest(entityName: "Reflection")
         let date =
-            NSSortDescriptor(key: "date", ascending: true)
+            NSSortDescriptor(key: "date", ascending: false)
         fetchRequest.sortDescriptors = [date]
         return fetchRequest
     }
@@ -150,17 +117,11 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
             return fetchedResultsController
             
         }
-//        let fetchRequest = NSFetchRequest(entityName: "Reflection")
-        //1
-        let  appDelegate =
-            UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
-    fetchedResultsController =
-            NSFetchedResultsController(fetchRequest: entryListFetchequest(),
-                                       managedObjectContext:managedContext,
-                                       sectionNameKeyPath: "sectionName",
-                                       cacheName: nil)
-        
+
+		let fetchRequest:NSFetchRequest = self.entryListFetchequest()
+
+		
+		fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataStack.managedObjectContext, sectionNameKeyPath: "sectionName", cacheName: nil)
         
         
         return fetchedResultsController
@@ -171,10 +132,7 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
         
         tableView.beginUpdates()
     }
-//    func controllerDidChangeContent(controller:
-//        NSFetchedResultsController) {
-////        tableView.reloadData()
-//    }
+
     
     func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
         switch type {
@@ -221,13 +179,11 @@ class EntryList: UITableViewController , NSFetchedResultsControllerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "edit" {
-//            let destinationController = segue.destinationViewController as? NewEntry
-//            UITableViewCell *cell = sender
-//          var cell = sender?.superview.superview as
-            var cell = sender as? UITableViewCell
-            var indexPath = tableView.indexPathForCell(cell!)
-            var navigationController = segue.destinationViewController as? UINavigationController
-            var entryViewCon = navigationController?.topViewController as? NewEntry
+
+            let cell = sender as? UITableViewCell
+            let indexPath = tableView.indexPathForCell(cell!)
+            let navigationController = segue.destinationViewController as? UINavigationController
+            let entryViewCon = navigationController?.topViewController as? NewEntry
             entryViewCon?.entry = self.fetchedResultsController.objectAtIndexPath(indexPath!) as! Reflection
 //            entryViewCon.entry
         }

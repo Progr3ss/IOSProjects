@@ -24,10 +24,10 @@ class Divergent: UIViewController {
         super.viewDidLoad()
         print("Divergent Color \(tempColorArray) and Divergent toDoItems \(toDoItems)")
         tableView.registerClass(DivergentCell.self, forCellReuseIdentifier: "cell")
-//        tableView.estimatedRowHeight = 66.0
-//        tableView.rowHeight = UITableViewAutomaticDimension
 
     }
+	
+//	prepar
 
     
 }
@@ -36,7 +36,8 @@ class Divergent: UIViewController {
 
 extension Divergent: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(" count \(toDoItems.count)")
+//        print(" count \(toDoItems.count)")
+		
         return toDoItems.count
     }
     
@@ -52,6 +53,8 @@ extension Divergent: UITableViewDataSource {
 
         cell.delegate = self
         cell.toDoItem = item
+		
+		
         
         return cell
     }
@@ -63,9 +66,35 @@ extension Divergent: UITableViewDataSource {
 extension Divergent: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        print("Did Select Row")
-        
+//        print("print("Did Select Row \(indexPath)")")
+	
+	
+		
+		if toDoItems.count == 1{
+			performSegueWithIdentifier("reflection", sender: nil)
+		}
+		
+		
+		
+		
     }
+	
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		if segue.identifier == "Reflection" {
+			
+			let reflectionView = segue.destinationViewController as! Reflection
+			
+//			reflectionView.
+		}
+		
+		
+		
+	}
+	
+	
+	
 }
 
 
@@ -84,7 +113,8 @@ extension Divergent: TableViewCellDelegate {
         tableView.deleteRowsAtIndexPaths([indexPathForRow], withRowAnimation: .Fade)
         tableView.endUpdates()
     }
-    
+	
+	
 }
 
 
