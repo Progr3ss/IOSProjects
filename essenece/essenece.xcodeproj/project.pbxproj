@@ -16,6 +16,8 @@
 		9180DAE61CB9E15900F094FF /* IdeaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180DAE51CB9E15900F094FF /* IdeaCell.swift */; };
 		9180DAE81CB9F5EA00F094FF /* Convergent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180DAE71CB9F5EA00F094FF /* Convergent.swift */; };
 		9180DAEC1CBA136E00F094FF /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180DAEB1CBA136E00F094FF /* Reflection.swift */; };
+		9180DAEE1CBA39FF00F094FF /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180DAED1CBA39FF00F094FF /* Timeline.swift */; };
+		9180DAF01CBA3E5600F094FF /* Reflection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180DAEF1CBA3E5600F094FF /* Reflection+CoreDataProperties.swift */; };
 		91E189431CB3984E00174C3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E189421CB3984E00174C3A /* AppDelegate.swift */; };
 		91E189481CB3984E00174C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E189461CB3984E00174C3A /* Main.storyboard */; };
 		91E1894B1CB3984E00174C3A /* essenece.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91E189491CB3984E00174C3A /* essenece.xcdatamodeld */; };
@@ -53,6 +55,8 @@
 		9180DAE51CB9E15900F094FF /* IdeaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaCell.swift; sourceTree = "<group>"; };
 		9180DAE71CB9F5EA00F094FF /* Convergent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convergent.swift; sourceTree = "<group>"; };
 		9180DAEB1CBA136E00F094FF /* Reflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
+		9180DAED1CBA39FF00F094FF /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		9180DAEF1CBA3E5600F094FF /* Reflection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflection+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		91E1893F1CB3984D00174C3A /* essenece.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = essenece.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E189421CB3984E00174C3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E189471CB3984E00174C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 		91E189361CB3984D00174C3A = {
 			isa = PBXGroup;
 			children = (
+				9180DAEF1CBA3E5600F094FF /* Reflection+CoreDataProperties.swift */,
+				9180DAED1CBA39FF00F094FF /* Timeline.swift */,
 				9180DAE71CB9F5EA00F094FF /* Convergent.swift */,
 				9180DAEB1CBA136E00F094FF /* Reflection.swift */,
 				9180DAE51CB9E15900F094FF /* IdeaCell.swift */,
@@ -316,10 +322,12 @@
 				9180DAE61CB9E15900F094FF /* IdeaCell.swift in Sources */,
 				9180DADE1CB9DAA100F094FF /* ToDoItems.swift in Sources */,
 				915418CC1CB5CB7500CB64F8 /* Divergent.swift in Sources */,
+				9180DAF01CBA3E5600F094FF /* Reflection+CoreDataProperties.swift in Sources */,
 				9180DAE01CB9DBAF00F094FF /* DivergentCell.swift in Sources */,
 				9180DADC1CB9DA3300F094FF /* Colors.swift in Sources */,
 				915418C81CB5BD0500CB64F8 /* Quotes.swift in Sources */,
 				91E1894B1CB3984E00174C3A /* essenece.xcdatamodeld in Sources */,
+				9180DAEE1CBA39FF00F094FF /* Timeline.swift in Sources */,
 				9180DAE81CB9F5EA00F094FF /* Convergent.swift in Sources */,
 				91E189741CB3986E00174C3A /* CoreDataStack.swift in Sources */,
 			);

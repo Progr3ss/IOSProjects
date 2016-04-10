@@ -107,7 +107,7 @@ extension Divergent {
 			convergentView.self.toDoItems = self.toDoItems
 			convergentView.mColorArray = mColorArray
 			
-			print("In transfer = {\(self.toDoItems) and color \(mColorArray)}")
+//			print("In transfer = {\(self.toDoItems) and color \(mColorArray)}")
 		}
 	}
 	

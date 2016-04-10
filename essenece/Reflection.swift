@@ -9,6 +9,8 @@
 import UIKit
 
 class Reflection: UIViewController {
+	
+	
 
 	@IBOutlet weak var bodyReflection: UITextField!
 	@IBOutlet weak var userIdeaReflection: UILabel!
@@ -32,6 +34,18 @@ class Reflection: UIViewController {
 }
 extension Reflection {
 	
+	@IBAction func doneWasPressed(sender: AnyObject) {
+		transferToListDismiss()
+		
+	}
 	
 	
+	@IBAction func cancelWasPressed(sender: AnyObject) {
+		transferToListDismiss()
+	}
+	
+	func transferToListDismiss(){
+		performSegueWithIdentifier("timelineSegue", sender: nil)
+//		self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+	}
 }
