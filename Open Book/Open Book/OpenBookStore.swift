@@ -1,5 +1,5 @@
 //
-//  OpenLibaryStore.swift
+//  OpenBookStore.swift
 //  Open Book
 //
 //  Created by martin chibwe on 4/12/16.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class OpenLibaryStore: UIViewController {
-	
+class OpenBookStore: UIViewController {
+
 	@IBOutlet weak var tableView: UITableView!
 	var categories = ["Action", "Drama", "Science Fiction", "Kids", "Horror"]
     override func viewDidLoad() {
@@ -24,9 +24,11 @@ class OpenLibaryStore: UIViewController {
     }
     
 
+
 }
 
-extension OpenLibaryStore : UITableViewDataSource{
+extension OpenBookStore: UITableViewDataSource{
+	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 		return categories.count
 	}
@@ -42,16 +44,12 @@ extension OpenLibaryStore : UITableViewDataSource{
 	
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
 		let cell = tableView.dequeueReusableCellWithIdentifier("cell") as? CategoryCell
 		
 		return cell!
 	}
 	
-	
-	
 }
-
 
 extension CategoryCell : UICollectionViewDelegateFlowLayout {
 	
@@ -64,3 +62,4 @@ extension CategoryCell : UICollectionViewDelegateFlowLayout {
 	}
 	
 }
+

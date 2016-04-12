@@ -15,17 +15,14 @@ class CategoryCell: UITableViewCell {
 	
 }
 
-extension CategoryCell: UICollectionViewDataSource {
+
+extension CategoryCell: UICollectionViewDataSource{
 	
 	func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		print("asdfasdf")
 		return 12
 	}
 	func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		
-		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("bookCell", forIndexPath: indexPath)
-		print("bookCewll")
-		
+		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("bookCell", forIndexPath: indexPath) 
 		return cell
 		
 	}

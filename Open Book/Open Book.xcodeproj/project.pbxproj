@@ -7,75 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7947ED35009AE75BB248DE6F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79927AFCB5AD7F6EEBD1C2DF /* Pods.framework */; };
-		915FAFE01CBCDAAB0035AC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915FAFDF1CBCDAAB0035AC53 /* AppDelegate.swift */; };
-		915FAFE21CBCDAAB0035AC53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915FAFE11CBCDAAB0035AC53 /* ViewController.swift */; };
-		915FAFE51CBCDAAB0035AC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915FAFE31CBCDAAB0035AC53 /* Main.storyboard */; };
-		915FAFE81CBCDAAB0035AC53 /* Open_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915FAFE61CBCDAAB0035AC53 /* Open_Book.xcdatamodeld */; };
-		915FAFEA1CBCDAAB0035AC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915FAFE91CBCDAAB0035AC53 /* Assets.xcassets */; };
-		915FAFED1CBCDAAB0035AC53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915FAFEB1CBCDAAB0035AC53 /* LaunchScreen.storyboard */; };
-		915FAFF81CBCDAAC0035AC53 /* Open_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915FAFF71CBCDAAC0035AC53 /* Open_BookTests.swift */; };
-		915FB0031CBCDAAC0035AC53 /* Open_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915FB0021CBCDAAC0035AC53 /* Open_BookUITests.swift */; };
-		915FB0151CBCE74C0035AC53 /* OpenLibaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915FB0141CBCE74B0035AC53 /* OpenLibaryStore.swift */; };
-		915FB0191CBCE8C40035AC53 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915FB0181CBCE8C40035AC53 /* CategoryCell.swift */; };
+		911173511CBCF78E009DA656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911173501CBCF78E009DA656 /* AppDelegate.swift */; };
+		911173561CBCF78E009DA656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911173541CBCF78E009DA656 /* Main.storyboard */; };
+		911173591CBCF78E009DA656 /* Open_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 911173571CBCF78E009DA656 /* Open_Book.xcdatamodeld */; };
+		9111735B1CBCF78E009DA656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9111735A1CBCF78E009DA656 /* Assets.xcassets */; };
+		9111735E1CBCF78E009DA656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9111735C1CBCF78E009DA656 /* LaunchScreen.storyboard */; };
+		911173691CBCF78E009DA656 /* Open_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911173681CBCF78E009DA656 /* Open_BookTests.swift */; };
+		911173741CBCF78E009DA656 /* Open_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911173731CBCF78E009DA656 /* Open_BookUITests.swift */; };
+		911173821CBCF8C5009DA656 /* OpenBookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911173811CBCF8C5009DA656 /* OpenBookStore.swift */; };
+		911173841CBCFA46009DA656 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911173831CBCFA46009DA656 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		915FAFF41CBCDAAC0035AC53 /* PBXContainerItemProxy */ = {
+		911173651CBCF78E009DA656 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 915FAFD41CBCDAAA0035AC53 /* Project object */;
+			containerPortal = 911173451CBCF78E009DA656 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 915FAFDB1CBCDAAB0035AC53;
+			remoteGlobalIDString = 9111734C1CBCF78E009DA656;
 			remoteInfo = "Open Book";
 		};
-		915FAFFF1CBCDAAC0035AC53 /* PBXContainerItemProxy */ = {
+		911173701CBCF78E009DA656 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 915FAFD41CBCDAAA0035AC53 /* Project object */;
+			containerPortal = 911173451CBCF78E009DA656 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 915FAFDB1CBCDAAB0035AC53;
+			remoteGlobalIDString = 9111734C1CBCF78E009DA656;
 			remoteInfo = "Open Book";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15815108F69197443F045E40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		1EC8A974B52EFC007CD98271 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		79927AFCB5AD7F6EEBD1C2DF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		915FAFDC1CBCDAAB0035AC53 /* Open Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		915FAFDF1CBCDAAB0035AC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		915FAFE11CBCDAAB0035AC53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		915FAFE41CBCDAAB0035AC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		915FAFE71CBCDAAB0035AC53 /* Open_Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Open_Book.xcdatamodel; sourceTree = "<group>"; };
-		915FAFE91CBCDAAB0035AC53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		915FAFEC1CBCDAAB0035AC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		915FAFEE1CBCDAAB0035AC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		915FAFF31CBCDAAC0035AC53 /* Open BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		915FAFF71CBCDAAC0035AC53 /* Open_BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_BookTests.swift; sourceTree = "<group>"; };
-		915FAFF91CBCDAAC0035AC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		915FAFFE1CBCDAAC0035AC53 /* Open BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		915FB0021CBCDAAC0035AC53 /* Open_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_BookUITests.swift; sourceTree = "<group>"; };
-		915FB0041CBCDAAC0035AC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		915FB0141CBCE74B0035AC53 /* OpenLibaryStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenLibaryStore.swift; sourceTree = "<group>"; };
-		915FB0181CBCE8C40035AC53 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		9111734D1CBCF78E009DA656 /* Open Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		911173501CBCF78E009DA656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		911173551CBCF78E009DA656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		911173581CBCF78E009DA656 /* Open_Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Open_Book.xcdatamodel; sourceTree = "<group>"; };
+		9111735A1CBCF78E009DA656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9111735D1CBCF78E009DA656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9111735F1CBCF78E009DA656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911173641CBCF78E009DA656 /* Open BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		911173681CBCF78E009DA656 /* Open_BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_BookTests.swift; sourceTree = "<group>"; };
+		9111736A1CBCF78E009DA656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9111736F1CBCF78E009DA656 /* Open BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		911173731CBCF78E009DA656 /* Open_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_BookUITests.swift; sourceTree = "<group>"; };
+		911173751CBCF78E009DA656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911173811CBCF8C5009DA656 /* OpenBookStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenBookStore.swift; sourceTree = "<group>"; };
+		911173831CBCFA46009DA656 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		915FAFD91CBCDAAB0035AC53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7947ED35009AE75BB248DE6F /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		915FAFF01CBCDAAC0035AC53 /* Frameworks */ = {
+		9111734A1CBCF78E009DA656 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		915FAFFB1CBCDAAC0035AC53 /* Frameworks */ = {
+		911173611CBCF78E009DA656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9111736C1CBCF78E009DA656 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,92 +78,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		211CEBBB9D7AB3A08A62EBA8 /* Pods */ = {
+		911173441CBCF78E009DA656 = {
 			isa = PBXGroup;
 			children = (
-				15815108F69197443F045E40 /* Pods.debug.xcconfig */,
-				1EC8A974B52EFC007CD98271 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		915FAFD31CBCDAAA0035AC53 = {
-			isa = PBXGroup;
-			children = (
-				915FAFDE1CBCDAAB0035AC53 /* Open Book */,
-				915FAFF61CBCDAAC0035AC53 /* Open BookTests */,
-				915FB0011CBCDAAC0035AC53 /* Open BookUITests */,
-				915FAFDD1CBCDAAB0035AC53 /* Products */,
-				211CEBBB9D7AB3A08A62EBA8 /* Pods */,
-				C11667C977E752091262E51B /* Frameworks */,
+				9111734F1CBCF78E009DA656 /* Open Book */,
+				911173671CBCF78E009DA656 /* Open BookTests */,
+				911173721CBCF78E009DA656 /* Open BookUITests */,
+				9111734E1CBCF78E009DA656 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		915FAFDD1CBCDAAB0035AC53 /* Products */ = {
+		9111734E1CBCF78E009DA656 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				915FAFDC1CBCDAAB0035AC53 /* Open Book.app */,
-				915FAFF31CBCDAAC0035AC53 /* Open BookTests.xctest */,
-				915FAFFE1CBCDAAC0035AC53 /* Open BookUITests.xctest */,
+				9111734D1CBCF78E009DA656 /* Open Book.app */,
+				911173641CBCF78E009DA656 /* Open BookTests.xctest */,
+				9111736F1CBCF78E009DA656 /* Open BookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		915FAFDE1CBCDAAB0035AC53 /* Open Book */ = {
+		9111734F1CBCF78E009DA656 /* Open Book */ = {
 			isa = PBXGroup;
 			children = (
-				915FAFDF1CBCDAAB0035AC53 /* AppDelegate.swift */,
-				915FAFE11CBCDAAB0035AC53 /* ViewController.swift */,
-				915FAFE31CBCDAAB0035AC53 /* Main.storyboard */,
-				915FAFE91CBCDAAB0035AC53 /* Assets.xcassets */,
-				915FAFEB1CBCDAAB0035AC53 /* LaunchScreen.storyboard */,
-				915FAFEE1CBCDAAB0035AC53 /* Info.plist */,
-				915FAFE61CBCDAAB0035AC53 /* Open_Book.xcdatamodeld */,
-				915FB0141CBCE74B0035AC53 /* OpenLibaryStore.swift */,
-				915FB0181CBCE8C40035AC53 /* CategoryCell.swift */,
+				911173501CBCF78E009DA656 /* AppDelegate.swift */,
+				911173541CBCF78E009DA656 /* Main.storyboard */,
+				9111735A1CBCF78E009DA656 /* Assets.xcassets */,
+				9111735C1CBCF78E009DA656 /* LaunchScreen.storyboard */,
+				9111735F1CBCF78E009DA656 /* Info.plist */,
+				911173571CBCF78E009DA656 /* Open_Book.xcdatamodeld */,
+				911173811CBCF8C5009DA656 /* OpenBookStore.swift */,
+				911173831CBCFA46009DA656 /* CategoryCell.swift */,
 			);
 			path = "Open Book";
 			sourceTree = "<group>";
 		};
-		915FAFF61CBCDAAC0035AC53 /* Open BookTests */ = {
+		911173671CBCF78E009DA656 /* Open BookTests */ = {
 			isa = PBXGroup;
 			children = (
-				915FAFF71CBCDAAC0035AC53 /* Open_BookTests.swift */,
-				915FAFF91CBCDAAC0035AC53 /* Info.plist */,
+				911173681CBCF78E009DA656 /* Open_BookTests.swift */,
+				9111736A1CBCF78E009DA656 /* Info.plist */,
 			);
 			path = "Open BookTests";
 			sourceTree = "<group>";
 		};
-		915FB0011CBCDAAC0035AC53 /* Open BookUITests */ = {
+		911173721CBCF78E009DA656 /* Open BookUITests */ = {
 			isa = PBXGroup;
 			children = (
-				915FB0021CBCDAAC0035AC53 /* Open_BookUITests.swift */,
-				915FB0041CBCDAAC0035AC53 /* Info.plist */,
+				911173731CBCF78E009DA656 /* Open_BookUITests.swift */,
+				911173751CBCF78E009DA656 /* Info.plist */,
 			);
 			path = "Open BookUITests";
-			sourceTree = "<group>";
-		};
-		C11667C977E752091262E51B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				79927AFCB5AD7F6EEBD1C2DF /* Pods.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		915FAFDB1CBCDAAB0035AC53 /* Open Book */ = {
+		9111734C1CBCF78E009DA656 /* Open Book */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 915FB0071CBCDAAC0035AC53 /* Build configuration list for PBXNativeTarget "Open Book" */;
+			buildConfigurationList = 911173781CBCF78F009DA656 /* Build configuration list for PBXNativeTarget "Open Book" */;
 			buildPhases = (
-				C460419BEC2F6CE9791FF2AB /* Check Pods Manifest.lock */,
-				915FAFD81CBCDAAB0035AC53 /* Sources */,
-				915FAFD91CBCDAAB0035AC53 /* Frameworks */,
-				915FAFDA1CBCDAAB0035AC53 /* Resources */,
-				6B3E37F23251CCE3222EA028 /* Embed Pods Frameworks */,
-				F0772618EC03B13992B08231 /* Copy Pods Resources */,
+				911173491CBCF78E009DA656 /* Sources */,
+				9111734A1CBCF78E009DA656 /* Frameworks */,
+				9111734B1CBCF78E009DA656 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -178,69 +148,69 @@
 			);
 			name = "Open Book";
 			productName = "Open Book";
-			productReference = 915FAFDC1CBCDAAB0035AC53 /* Open Book.app */;
+			productReference = 9111734D1CBCF78E009DA656 /* Open Book.app */;
 			productType = "com.apple.product-type.application";
 		};
-		915FAFF21CBCDAAC0035AC53 /* Open BookTests */ = {
+		911173631CBCF78E009DA656 /* Open BookTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 915FB00A1CBCDAAC0035AC53 /* Build configuration list for PBXNativeTarget "Open BookTests" */;
+			buildConfigurationList = 9111737B1CBCF78F009DA656 /* Build configuration list for PBXNativeTarget "Open BookTests" */;
 			buildPhases = (
-				915FAFEF1CBCDAAC0035AC53 /* Sources */,
-				915FAFF01CBCDAAC0035AC53 /* Frameworks */,
-				915FAFF11CBCDAAC0035AC53 /* Resources */,
+				911173601CBCF78E009DA656 /* Sources */,
+				911173611CBCF78E009DA656 /* Frameworks */,
+				911173621CBCF78E009DA656 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				915FAFF51CBCDAAC0035AC53 /* PBXTargetDependency */,
+				911173661CBCF78E009DA656 /* PBXTargetDependency */,
 			);
 			name = "Open BookTests";
 			productName = "Open BookTests";
-			productReference = 915FAFF31CBCDAAC0035AC53 /* Open BookTests.xctest */;
+			productReference = 911173641CBCF78E009DA656 /* Open BookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		915FAFFD1CBCDAAC0035AC53 /* Open BookUITests */ = {
+		9111736E1CBCF78E009DA656 /* Open BookUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 915FB00D1CBCDAAC0035AC53 /* Build configuration list for PBXNativeTarget "Open BookUITests" */;
+			buildConfigurationList = 9111737E1CBCF78F009DA656 /* Build configuration list for PBXNativeTarget "Open BookUITests" */;
 			buildPhases = (
-				915FAFFA1CBCDAAC0035AC53 /* Sources */,
-				915FAFFB1CBCDAAC0035AC53 /* Frameworks */,
-				915FAFFC1CBCDAAC0035AC53 /* Resources */,
+				9111736B1CBCF78E009DA656 /* Sources */,
+				9111736C1CBCF78E009DA656 /* Frameworks */,
+				9111736D1CBCF78E009DA656 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				915FB0001CBCDAAC0035AC53 /* PBXTargetDependency */,
+				911173711CBCF78E009DA656 /* PBXTargetDependency */,
 			);
 			name = "Open BookUITests";
 			productName = "Open BookUITests";
-			productReference = 915FAFFE1CBCDAAC0035AC53 /* Open BookUITests.xctest */;
+			productReference = 9111736F1CBCF78E009DA656 /* Open BookUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		915FAFD41CBCDAAA0035AC53 /* Project object */ = {
+		911173451CBCF78E009DA656 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "martin chibwe";
 				TargetAttributes = {
-					915FAFDB1CBCDAAB0035AC53 = {
+					9111734C1CBCF78E009DA656 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					915FAFF21CBCDAAC0035AC53 = {
+					911173631CBCF78E009DA656 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 915FAFDB1CBCDAAB0035AC53;
+						TestTargetID = 9111734C1CBCF78E009DA656;
 					};
-					915FAFFD1CBCDAAC0035AC53 = {
+					9111736E1CBCF78E009DA656 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 915FAFDB1CBCDAAB0035AC53;
+						TestTargetID = 9111734C1CBCF78E009DA656;
 					};
 				};
 			};
-			buildConfigurationList = 915FAFD71CBCDAAB0035AC53 /* Build configuration list for PBXProject "Open Book" */;
+			buildConfigurationList = 911173481CBCF78E009DA656 /* Build configuration list for PBXProject "Open Book" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -248,37 +218,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 915FAFD31CBCDAAA0035AC53;
-			productRefGroup = 915FAFDD1CBCDAAB0035AC53 /* Products */;
+			mainGroup = 911173441CBCF78E009DA656;
+			productRefGroup = 9111734E1CBCF78E009DA656 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				915FAFDB1CBCDAAB0035AC53 /* Open Book */,
-				915FAFF21CBCDAAC0035AC53 /* Open BookTests */,
-				915FAFFD1CBCDAAC0035AC53 /* Open BookUITests */,
+				9111734C1CBCF78E009DA656 /* Open Book */,
+				911173631CBCF78E009DA656 /* Open BookTests */,
+				9111736E1CBCF78E009DA656 /* Open BookUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		915FAFDA1CBCDAAB0035AC53 /* Resources */ = {
+		9111734B1CBCF78E009DA656 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915FAFED1CBCDAAB0035AC53 /* LaunchScreen.storyboard in Resources */,
-				915FAFEA1CBCDAAB0035AC53 /* Assets.xcassets in Resources */,
-				915FAFE51CBCDAAB0035AC53 /* Main.storyboard in Resources */,
+				9111735E1CBCF78E009DA656 /* LaunchScreen.storyboard in Resources */,
+				9111735B1CBCF78E009DA656 /* Assets.xcassets in Resources */,
+				911173561CBCF78E009DA656 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		915FAFF11CBCDAAC0035AC53 /* Resources */ = {
+		911173621CBCF78E009DA656 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		915FAFFC1CBCDAAC0035AC53 /* Resources */ = {
+		9111736D1CBCF78E009DA656 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,111 +257,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6B3E37F23251CCE3222EA028 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C460419BEC2F6CE9791FF2AB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F0772618EC03B13992B08231 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		915FAFD81CBCDAAB0035AC53 /* Sources */ = {
+		911173491CBCF78E009DA656 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915FAFE81CBCDAAB0035AC53 /* Open_Book.xcdatamodeld in Sources */,
-				915FAFE21CBCDAAB0035AC53 /* ViewController.swift in Sources */,
-				915FB0151CBCE74C0035AC53 /* OpenLibaryStore.swift in Sources */,
-				915FAFE01CBCDAAB0035AC53 /* AppDelegate.swift in Sources */,
-				915FB0191CBCE8C40035AC53 /* CategoryCell.swift in Sources */,
+				911173821CBCF8C5009DA656 /* OpenBookStore.swift in Sources */,
+				911173591CBCF78E009DA656 /* Open_Book.xcdatamodeld in Sources */,
+				911173511CBCF78E009DA656 /* AppDelegate.swift in Sources */,
+				911173841CBCFA46009DA656 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		915FAFEF1CBCDAAC0035AC53 /* Sources */ = {
+		911173601CBCF78E009DA656 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915FAFF81CBCDAAC0035AC53 /* Open_BookTests.swift in Sources */,
+				911173691CBCF78E009DA656 /* Open_BookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		915FAFFA1CBCDAAC0035AC53 /* Sources */ = {
+		9111736B1CBCF78E009DA656 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915FB0031CBCDAAC0035AC53 /* Open_BookUITests.swift in Sources */,
+				911173741CBCF78E009DA656 /* Open_BookUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		915FAFF51CBCDAAC0035AC53 /* PBXTargetDependency */ = {
+		911173661CBCF78E009DA656 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 915FAFDB1CBCDAAB0035AC53 /* Open Book */;
-			targetProxy = 915FAFF41CBCDAAC0035AC53 /* PBXContainerItemProxy */;
+			target = 9111734C1CBCF78E009DA656 /* Open Book */;
+			targetProxy = 911173651CBCF78E009DA656 /* PBXContainerItemProxy */;
 		};
-		915FB0001CBCDAAC0035AC53 /* PBXTargetDependency */ = {
+		911173711CBCF78E009DA656 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 915FAFDB1CBCDAAB0035AC53 /* Open Book */;
-			targetProxy = 915FAFFF1CBCDAAC0035AC53 /* PBXContainerItemProxy */;
+			target = 9111734C1CBCF78E009DA656 /* Open Book */;
+			targetProxy = 911173701CBCF78E009DA656 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		915FAFE31CBCDAAB0035AC53 /* Main.storyboard */ = {
+		911173541CBCF78E009DA656 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				915FAFE41CBCDAAB0035AC53 /* Base */,
+				911173551CBCF78E009DA656 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		915FAFEB1CBCDAAB0035AC53 /* LaunchScreen.storyboard */ = {
+		9111735C1CBCF78E009DA656 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				915FAFEC1CBCDAAB0035AC53 /* Base */,
+				9111735D1CBCF78E009DA656 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -399,7 +320,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		915FB0051CBCDAAC0035AC53 /* Debug */ = {
+		911173761CBCF78F009DA656 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -445,7 +366,7 @@
 			};
 			name = Debug;
 		};
-		915FB0061CBCDAAC0035AC53 /* Release */ = {
+		911173771CBCF78F009DA656 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -484,9 +405,8 @@
 			};
 			name = Release;
 		};
-		915FB0081CBCDAAC0035AC53 /* Debug */ = {
+		911173791CBCF78F009DA656 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15815108F69197443F045E40 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Open Book/Info.plist";
@@ -496,9 +416,8 @@
 			};
 			name = Debug;
 		};
-		915FB0091CBCDAAC0035AC53 /* Release */ = {
+		9111737A1CBCF78F009DA656 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EC8A974B52EFC007CD98271 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Open Book/Info.plist";
@@ -508,7 +427,7 @@
 			};
 			name = Release;
 		};
-		915FB00B1CBCDAAC0035AC53 /* Debug */ = {
+		9111737C1CBCF78F009DA656 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,7 +439,7 @@
 			};
 			name = Debug;
 		};
-		915FB00C1CBCDAAC0035AC53 /* Release */ = {
+		9111737D1CBCF78F009DA656 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,7 +451,7 @@
 			};
 			name = Release;
 		};
-		915FB00E1CBCDAAC0035AC53 /* Debug */ = {
+		9111737F1CBCF78F009DA656 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Open BookUITests/Info.plist";
@@ -543,7 +462,7 @@
 			};
 			name = Debug;
 		};
-		915FB00F1CBCDAAC0035AC53 /* Release */ = {
+		911173801CBCF78F009DA656 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Open BookUITests/Info.plist";
@@ -557,56 +476,53 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		915FAFD71CBCDAAB0035AC53 /* Build configuration list for PBXProject "Open Book" */ = {
+		911173481CBCF78E009DA656 /* Build configuration list for PBXProject "Open Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				915FB0051CBCDAAC0035AC53 /* Debug */,
-				915FB0061CBCDAAC0035AC53 /* Release */,
+				911173761CBCF78F009DA656 /* Debug */,
+				911173771CBCF78F009DA656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		915FB0071CBCDAAC0035AC53 /* Build configuration list for PBXNativeTarget "Open Book" */ = {
+		911173781CBCF78F009DA656 /* Build configuration list for PBXNativeTarget "Open Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				915FB0081CBCDAAC0035AC53 /* Debug */,
-				915FB0091CBCDAAC0035AC53 /* Release */,
+				911173791CBCF78F009DA656 /* Debug */,
+				9111737A1CBCF78F009DA656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		915FB00A1CBCDAAC0035AC53 /* Build configuration list for PBXNativeTarget "Open BookTests" */ = {
+		9111737B1CBCF78F009DA656 /* Build configuration list for PBXNativeTarget "Open BookTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				915FB00B1CBCDAAC0035AC53 /* Debug */,
-				915FB00C1CBCDAAC0035AC53 /* Release */,
+				9111737C1CBCF78F009DA656 /* Debug */,
+				9111737D1CBCF78F009DA656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		915FB00D1CBCDAAC0035AC53 /* Build configuration list for PBXNativeTarget "Open BookUITests" */ = {
+		9111737E1CBCF78F009DA656 /* Build configuration list for PBXNativeTarget "Open BookUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				915FB00E1CBCDAAC0035AC53 /* Debug */,
-				915FB00F1CBCDAAC0035AC53 /* Release */,
+				9111737F1CBCF78F009DA656 /* Debug */,
+				911173801CBCF78F009DA656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		915FAFE61CBCDAAB0035AC53 /* Open_Book.xcdatamodeld */ = {
+		911173571CBCF78E009DA656 /* Open_Book.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				915FAFE71CBCDAAB0035AC53 /* Open_Book.xcdatamodel */,
+				911173581CBCF78E009DA656 /* Open_Book.xcdatamodel */,
 			);
-			currentVersion = 915FAFE71CBCDAAB0035AC53 /* Open_Book.xcdatamodel */;
+			currentVersion = 911173581CBCF78E009DA656 /* Open_Book.xcdatamodel */;
 			path = Open_Book.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 915FAFD41CBCDAAA0035AC53 /* Project object */;
+	rootObject = 911173451CBCF78E009DA656 /* Project object */;
 }

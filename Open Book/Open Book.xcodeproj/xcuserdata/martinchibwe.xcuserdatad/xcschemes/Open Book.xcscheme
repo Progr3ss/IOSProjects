@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "915FAFDB1CBCDAAB0035AC53"
+               BlueprintIdentifier = "9111734C1CBCF78E009DA656"
                BuildableName = "Open Book.app"
                BlueprintName = "Open Book"
                ReferencedContainer = "container:Open Book.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "915FAFF21CBCDAAC0035AC53"
+               BlueprintIdentifier = "911173631CBCF78E009DA656"
                BuildableName = "Open BookTests.xctest"
                BlueprintName = "Open BookTests"
                ReferencedContainer = "container:Open Book.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "915FAFFD1CBCDAAC0035AC53"
+               BlueprintIdentifier = "9111736E1CBCF78E009DA656"
                BuildableName = "Open BookUITests.xctest"
                BlueprintName = "Open BookUITests"
                ReferencedContainer = "container:Open Book.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "915FAFDB1CBCDAAB0035AC53"
+            BlueprintIdentifier = "9111734C1CBCF78E009DA656"
             BuildableName = "Open Book.app"
             BlueprintName = "Open Book"
             ReferencedContainer = "container:Open Book.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "915FAFDB1CBCDAAB0035AC53"
+            BlueprintIdentifier = "9111734C1CBCF78E009DA656"
             BuildableName = "Open Book.app"
             BlueprintName = "Open Book"
             ReferencedContainer = "container:Open Book.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "915FAFDB1CBCDAAB0035AC53"
+            BlueprintIdentifier = "9111734C1CBCF78E009DA656"
             BuildableName = "Open Book.app"
             BlueprintName = "Open Book"
             ReferencedContainer = "container:Open Book.xcodeproj">
