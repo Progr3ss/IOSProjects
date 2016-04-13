@@ -7,20 +7,22 @@
 //
 
 import UIKit
-
+import CoreData
 class Reflection: UIViewController {
 	
 	
 
 	@IBOutlet weak var bodyReflection: UITextField!
 	@IBOutlet weak var userIdeaReflection: UILabel!
+	var reflection : EntityReflection!
+	let dataStack = CoreDataStack.sharedInstance
 	
 	var toDoItems = [ToDoItems]()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-		print("Reflection \(toDoItems)")
+//		userIdeaReflection.text = toDoItems[0].text
+
 
         // Do any additional setup after loading the view.
     }
@@ -34,13 +36,27 @@ class Reflection: UIViewController {
 }
 extension Reflection {
 	
+	func insertDiaryEntry(){
+		
+		let entry = NSEntityDescription.insertNewObjectForEntityForName("EntityReflection", inManagedObjectContext: dataStack.managedObjectContext) as! EntityReflection
+		
+		entry.body = self.bodyReflection.text
+		entry.idea = self.userIdeaReflection.text
+		dataStack.saveContext()
+		
+	}
+	
+
+	
 	@IBAction func doneWasPressed(sender: AnyObject) {
+		insertDiaryEntry()
 		transferToListDismiss()
 		
 	}
 	
 	
 	@IBAction func cancelWasPressed(sender: AnyObject) {
+		
 		transferToListDismiss()
 	}
 	

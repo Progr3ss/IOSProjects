@@ -23,10 +23,7 @@ class Convergent: UIViewController {
 		tableView.registerClass(DivergentCell.self, forCellReuseIdentifier: "cell")
 		tableView.backgroundColor = UIColor.blueColor()
 		
-		print("toDoItems \(toDoItems)")
-		print("Color \(mColorArray)")
 
-        // Do any additional setup after loading the view.
     }
 
 }
@@ -61,13 +58,6 @@ extension Convergent: UITableViewDataSource {
 	
 }
 extension Convergent: UITableViewDelegate{
-	
-//	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//		
-//		if toDoItems.count == 1 {
-//			performSegueWithIdentifier("reflectionSegue", sender: nil)
-//		}
-//	}
 
 	
 }
@@ -82,11 +72,9 @@ extension Convergent {
 				reflection.self.toDoItems = self.toDoItems
 				
 				
-				print("in reflection segue \(reflection.toDoItems)")
 				
 			}
 			
-//		 reflectionView.self.toDoItems = self.toDoItems
 			
 		
 		}
