@@ -31,7 +31,6 @@ extension Convergent: UITableViewDataSource {
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		
-//		print("Num items \(toDoItems.count)")
 		if toDoItems.count == 1 {
 			performSegueWithIdentifier("reflectionSegue", sender: nil)
 		}
@@ -66,7 +65,7 @@ extension Convergent {
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		
 		if segue.identifier == "reflectionSegue" {
-			print("in segue")
+			
 		
 			if let reflection = segue.destinationViewController as? Reflection {
 				reflection.self.toDoItems = self.toDoItems
