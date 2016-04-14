@@ -36,21 +36,8 @@ class ConfigureCellForEntry: UITableViewCell {
 		self.bodyLabel.text = entry.body
 		self.locationLabel.text = entry.location
 		self.dateLabel.text = formatter.stringFromDate(date)
-		print("bodylabel \(self.bodyLabel.text )")
+		
 
-		
-//		self.timeLabel.text = formatter.stringFromDate(date)
-//		self.mainImage!.image = UIImage(named: "icn_noimage")
-//		
-//		if entry.imageData != nil{
-//			self.mainImage!.image = UIImage(data: entry.imageData!)
-//		}else{
-//			self.mainImage!.image = UIImage(named: "icn_noimage")
-//		}
-		
-		// Set the rounded edges - using Quartz framework - ensure clipsubviews is checked in storyboard to perform clipped, otherwise this will do nothing
-//		self.mainImage.layer.cornerRadius = CGRectGetWidth(self.mainImage.frame) / 2.0
-		
 		
 	}
 	

@@ -31,7 +31,7 @@ extension Convergent: UITableViewDataSource {
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		
-		print("Num items \(toDoItems.count)")
+//		print("Num items \(toDoItems.count)")
 		if toDoItems.count == 1 {
 			performSegueWithIdentifier("reflectionSegue", sender: nil)
 		}
@@ -74,9 +74,7 @@ extension Convergent {
 				
 				
 			}
-			
-			
-		
+
 		}
 	}
 }
