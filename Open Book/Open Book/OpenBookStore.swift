@@ -11,18 +11,35 @@ import UIKit
 class OpenBookStore: UIViewController {
 
 	@IBOutlet weak var tableView: UITableView!
-	var categories = ["Action", "Drama", "Science Fiction", "Kids", "Horror"]
+	var categories = ["History", "Philosophy", "Science Fiction", "Kids", "Horror"]
+	
+	
+	func delay(seconds seconds: Double, completion:()->()) {
+		let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
+		dispatch_after(popTime, dispatch_get_main_queue()) {
+			completion()
+		}
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		delay(seconds: 1.0){
+			self.tableView.reloadData()
+		}
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if let videoCell = sender as? BookCell,
+			let bookDetailPage = segue.destinationViewController as? BookDetail {
+			let book = videoCell.book
+			bookDetailPage.book = book
+
+		}
+	}
+	
 
 
 }
@@ -45,21 +62,13 @@ extension OpenBookStore: UITableViewDataSource{
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCellWithIdentifier("cell") as? CategoryCell
+	
+		cell?.genre = Catalog.sharedInstance.genres[indexPath.section]
+			
 		
 		return cell!
 	}
 	
 }
 
-extension CategoryCell : UICollectionViewDelegateFlowLayout {
-	
-	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-		let itemsPerRow:CGFloat = 3
-		let hardCodedPadding:CGFloat = 5
-		let itemWidth = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding
-		let itemHeight = collectionView.bounds.height - (2 * hardCodedPadding)
-		return CGSize(width: itemWidth, height: itemHeight)
-	}
-	
-}
 
